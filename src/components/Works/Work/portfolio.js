@@ -1,6 +1,7 @@
 import cafe from "../portfolioImg/cafe.png";
 import cny from "../portfolioImg/cny.png";
 import dv from "../portfolioImg/dv.png";
+import portfolioPic from "../portfolioImg/portfolio.png";
 
 const portfolio = [
   {
@@ -41,10 +42,10 @@ const portfolio = [
     projectName: "Portfolio developed with React",
     tags: ["Design + Development"],
     description:
-      "School project for portfolio. Built the page with elementor. Please ignore the content because I've learn more about myself now.",
-    repoLink: "",
+      "The page you're seeing right now. Designed with Figma and developed with React",
+    repoLink: "https://github.com/TingtingWeiIWD/portfolio",
     liveLink: "https:/tingtingwei.net",
-    image: cafe,
+    image: portfolioPic,
     themeColor: "#F8820A",
   },
   // {

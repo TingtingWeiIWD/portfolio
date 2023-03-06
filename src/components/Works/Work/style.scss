@@ -155,6 +155,11 @@ div.work {
   height: 100%;
   border-radius: 20px;
 
+  &.portfolio {
+    $themeColor: $secondary2;
+    @include cardStyle($themeColor);
+  }
+
   &.cafe {
     $themeColor: #d66800;
 
