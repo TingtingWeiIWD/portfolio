@@ -1,0 +1,42 @@
+$title-font: "Abril Fatface", cursive;
+$body-font: "Barlow Condensed", sans-serif;
+
+$primary1: #f66500;
+$primary2: #0d8794;
+$secondary1: #f8820a;
+$secondary2: #084555;
+$redOrange: #bd3b02;
+$gray: #525665;
+$background-color: #1d2126;
+
+@mixin breakpoint($max-width) {
+  @media only screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-small {
+  @include breakpoint(500px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-medium {
+  @include breakpoint(800px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-large {
+  @include breakpoint(1000px) {
+    @content;
+  }
+}
+
+@mixin iconContainer {
+  display: flex;
+  justify-content: center;
+  svg {
+    margin-left: 8px;
+  }
+}

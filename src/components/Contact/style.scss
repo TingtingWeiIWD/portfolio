@@ -1,0 +1,93 @@
+@import "../../styles/variebles.scss";
+
+div.contact {
+  display: flex;
+  width: 60vw;
+  //  width: 750px;
+  align-self: center;
+  @include breakpoint-medium {
+    width: 80%;
+  }
+
+  form {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      white-space: nowrap;
+    }
+    input,
+    textarea {
+      border-radius: 8px;
+      padding-left: 1rem;
+      border-style: none;
+      font-family: $body-font;
+      margin-bottom: 1rem;
+      background-color: white;
+    }
+    input[type="submit"] {
+      border-radius: 10px;
+    }
+    .inputArea {
+      display: flex;
+      column-gap: 1rem;
+      flex-wrap: wrap;
+      // row-gap: 1rem;
+      width: 100%;
+
+      .inputName,
+      .inputEmail,
+      .inputSubject {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        input {
+          height: 2rem;
+        }
+      }
+    }
+
+    .inputSubject {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: 48.5%;
+      @include breakpoint-small {
+        width: 100%;
+      }
+      input,
+      textarea {
+        height: 2rem;
+      }
+    }
+    .inputMessage {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      input,
+      textarea {
+        height: 5rem;
+        padding-top: 1rem;
+      }
+    }
+
+    div.borderBtn {
+      margin-top: 4rem;
+      position: relative;
+      span.alert {
+        background: transparent;
+        position: absolute;
+        top: -50px;
+        color: $primary1;
+        letter-spacing: 0;
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "../../styles/variebles.scss";
+
+div.worksContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  // align-self: center;
+  align-items: center;
+}

@@ -1,0 +1,124 @@
+@import "../../styles/variebles.scss";
+div.skills {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6vw;
+  //width: 60%;
+  align-self: center;
+  text-align: center;
+  font-size: 2vw;
+  flex-wrap: wrap;
+  @include breakpoint-medium {
+    row-gap: 6vw;
+  }
+
+  .skillCategory {
+    display: flex;
+    column-gap: 6vw;
+    align-items: center;
+
+    @include breakpoint-medium {
+      flex-direction: column;
+    }
+    span.skillCatrgoryText {
+      display: flex;
+      width: 10vw;
+
+      justify-content: center;
+      white-space: nowrap;
+
+      @include breakpoint-medium {
+        color: $primary1;
+        font-size: 3vw;
+        margin: 3vw 0;
+      }
+      @include breakpoint-small {
+        font-size: 4vw;
+      }
+    }
+    div.skillIcons {
+      display: flex;
+      column-gap: 6vw;
+      text-align: center;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+      @include breakpoint-medium {
+        column-gap: 1vw;
+      }
+      @include breakpoint-small {
+        column-gap: 5vw;
+      }
+      div {
+        font-size: 4vw;
+        position: relative;
+
+        @include breakpoint-medium {
+          display: flex;
+          flex-direction: column;
+          row-gap: 2vw;
+
+          font-size: 2rem;
+          width: 12vw;
+          text-align: center;
+          align-items: center;
+          align-self: center;
+          justify-content: center;
+        }
+        @include breakpoint-small {
+          font-size: 30px;
+        }
+        span {
+          // display: none;
+
+          font-size: 2vw;
+          width: fit-content;
+          @include breakpoint-medium {
+            display: flex;
+          }
+          @include breakpoint-small {
+            font-size: 4vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  div.skillIcons div {
+    display: flex;
+    svg.front {
+      font-size: 4vw;
+      background-color: $background-color;
+      transition: all 0.2s;
+      backface-visibility: hidden;
+      transform: rotateY(0);
+    }
+    span.back {
+      background-color: $background-color;
+      height: 4vw;
+      font-size: 4vw;
+      color: $primary1;
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      align-items: center;
+      text-align: center;
+      backface-visibility: hidden;
+      transition: all 0.2s;
+
+      // -webkit-backface-visibility: hidden;
+      transform: rotateY(180deg);
+    }
+    &:hover .front {
+      z-index: 0;
+      transform: rotateY(180deg);
+    }
+    &:hover .back {
+      transform: rotateY(0);
+    }
+  }
+}

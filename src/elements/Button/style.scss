@@ -1,0 +1,86 @@
+@import "../../styles/variebles.scss";
+
+.borderBtn {
+  background-image: linear-gradient(to right, $primary2 0%, $primary1 100%);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  letter-spacing: 1px;
+  margin: 2rem auto;
+  padding: 1px;
+  position: relative;
+  text-decoration: none;
+  z-index: 2;
+  height: 2.5rem;
+  width: 150px;
+  input[type="submit"] {
+    color: white;
+    font-family: $body-font;
+    font-size: large;
+    background: $background-color;
+    letter-spacing: 1px;
+    border-radius: 10px;
+  }
+}
+
+.borderBtn:hover {
+  color: #fff;
+}
+
+.borderBtn span,
+.borderBtn input[type="submit"] {
+  align-items: center;
+  background: $background-color;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.borderBtn:hover span,
+.borderBtn:hover input[type="submit"] {
+  background: transparent;
+}
+
+.fillBtn {
+  background-color: $primary1;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  //letter-spacing: 1px;
+  font-size: small;
+  //padding: 2px;
+  position: relative;
+  text-decoration: none;
+  z-index: 2;
+  height: 2rem;
+  width: 100px;
+  transition: background 0.5s ease;
+}
+
+.fillBtn:hover {
+  color: $background-color;
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $primary1;
+}
+
+.fillBtn span {
+  align-items: center;
+  background: transparent;
+
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.fillBtn:hover span {
+  background: transparent;
+}

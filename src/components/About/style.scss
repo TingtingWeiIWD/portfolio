@@ -1,0 +1,84 @@
+@import "../../styles/variebles.scss";
+
+div.about {
+  // align-self: center;
+  //padding: 15vw 0;
+  display: flex;
+  @include breakpoint-small {
+    padding: 0;
+    flex-direction: column;
+  }
+  h2 {
+    color: white;
+    font-family: $title-font;
+    font-weight: 200;
+    font-size: 4vw;
+    align-self: center;
+    text-align: center;
+    flex: 1;
+    @include breakpoint-small {
+      font-size: 6vw;
+    }
+  }
+  div.aboutDetail {
+    flex: 1;
+
+    @include breakpoint-small {
+      text-align: center;
+    }
+    p {
+      color: white;
+      width: 80%;
+      font-size: 1.5vw;
+      font-weight: 100;
+      @include breakpoint-large {
+        font-weight: 400;
+      }
+      @include breakpoint-small {
+        font-size: 4vw;
+        width: 80%;
+        display: inline-block;
+        margin: 1.5vw;
+        line-height: 7vw;
+        //text-align: center;
+      }
+    }
+    div.aboutCTA {
+      display: flex;
+      column-gap: 1.5vw;
+      align-items: center;
+      margin-top: 2rem;
+      width: 80%;
+      @include breakpoint-small {
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+      }
+      a.borderBtn {
+        display: inline;
+        margin: 0;
+        letter-spacing: 1px;
+        svg {
+          font-size: inherit;
+        }
+        @include breakpoint-small {
+          width: 35vw;
+          font-size: 4vw;
+          svg {
+            font-size: 4vw;
+          }
+        }
+      }
+      svg {
+        color: white;
+        font-size: 2rem;
+        opacity: 70%;
+        transition: all 0.1s ease-in-out;
+        &:hover {
+          opacity: 1;
+          transform: scale(120%);
+        }
+      }
+    }
+  }
+}

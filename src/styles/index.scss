@@ -1,0 +1,33 @@
+@import "./variebles.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:wght@100;400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: $body-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $background-color;
+  #root {
+    overflow: hidden;
+    div.App {
+      margin: 0 1%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20vw;
+
+      @include breakpoint-small {
+        row-gap: 4rem;
+      }
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.highlightText {
+  color: $primary1;
+}

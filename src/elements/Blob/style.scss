@@ -1,0 +1,110 @@
+@import "../../styles/variebles.scss";
+
+@mixin blobStyle($color) {
+  span.blobContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    z-index: -9;
+    span.blob {
+      position: absolute;
+      @content;
+
+      background: transparent;
+
+      svg {
+        animation: spin 20s linear infinite both;
+        path {
+          fill: $color;
+        }
+        // animation-play-state: running;
+        //   &:hover {
+        //     animation-play-state: paused;
+        //   }
+      }
+    }
+  }
+}
+#headerBlobParent {
+  @include blobStyle(rgba(13, 135, 148, 0.5)) {
+    top: -22vw;
+    left: -22vw;
+    width: 40vw;
+  }
+}
+#heroBlobParent {
+  @include blobStyle(rgba(248, 130, 10, 0.3)) {
+    top: 5vw;
+    left: -10vw;
+    width: 25vw;
+  }
+}
+
+#aboutBlobParent {
+  @include blobStyle(rgba(13, 135, 148, 0.3)) {
+    top: -20vw;
+    left: -10vw;
+    width: 50vw;
+  }
+}
+#skillBlobParent1 {
+  @include blobStyle(rgba(248, 130, 10, 0.3)) {
+    top: -15vw;
+    left: -20vw;
+    width: 40vw;
+  }
+}
+#skillBlobParent2 {
+  @include blobStyle(rgba(13, 135, 148, 0.25)) {
+    top: -30vw;
+    left: -10vw;
+    width: 50vw;
+  }
+}
+#worksBlobParent1 {
+  @include blobStyle(rgba(13, 135, 148, 0.3)) {
+    top: 10vw;
+    left: -20vw;
+    width: 50vw;
+  }
+}
+#worksBlobParent2 {
+  @include blobStyle(rgba(248, 130, 10, 0.3)) {
+    // color: rgb(248, 130, 10);
+    top: -50vw;
+    left: 20vw;
+    width: 40vw;
+  }
+}
+#contactBlobParent {
+  @include blobStyle(rgba(13, 135, 148, 0.3)) {
+    top: -15vw;
+    left: -10vw;
+    width: 40vw;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// @keyframes scaleUpDown {
+//   0% {
+//     transform: scale(100%);
+//   }
+//   25% {
+//     transform: scale(110%);
+//   }
+//   75% {
+//     transform: scale(90%);
+//   }
+//   100% {
+//     transform: scale(100%);
+//   }
+// }

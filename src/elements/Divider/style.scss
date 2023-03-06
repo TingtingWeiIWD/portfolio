@@ -1,0 +1,35 @@
+@import "../../styles/variebles.scss";
+
+div.divider {
+  display: flex;
+  // flex-direction: column;
+  // row-gap: 2vw;
+  align-self: center;
+  font-family: $body-font;
+  font-size: 2vw;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 5vw;
+  @include breakpoint-small {
+    font-size: 5vw;
+  }
+  div.text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    div.line {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 150%;
+      height: 1px;
+      margin-top: 1vw;
+      background-image: linear-gradient(to right, $primary2 0%, $primary1 100%);
+    }
+  }
+}
