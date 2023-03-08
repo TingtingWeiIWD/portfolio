@@ -78,10 +78,10 @@ export default function Skills() {
             <DiWordpress className="front" />
             <span className="back">WordPress</span>
           </div>
-          <div>
+          {/* <div>
             <DiDrupal className="front" />
             <span className="back">Drupal</span>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="skillCategory">
@@ -147,10 +147,10 @@ export default function Skills() {
       <div className="skillCategory">
         <span className="skillCatrgoryText">Digital Marketing</span>
         <div className="skillIcons">
-          <div>
+          {/* <div>
             <MdOutlineScreenSearchDesktop className="front" />
             <span className="back">SEO</span>
-          </div>
+          </div> */}
           <div>
             <AiOutlineShoppingCart className="front" />
             <span className="back">eCommerce</span>

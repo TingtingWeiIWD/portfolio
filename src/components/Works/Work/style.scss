@@ -17,8 +17,11 @@
   }
 
   div.tagsDiv {
+    width: 50%;
     display: flex;
     column-gap: 1rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
     .tag {
       background-color: rgba($themeColor, 0.1);
       padding: 0.3rem 0.5rem;
@@ -60,7 +63,7 @@
       left: 35vw;
       img {
         position: absolute;
-        // left: -75px;
+        left: -5vw;
         top: -10px;
         height: 400px;
         transition: all 0.1s;
@@ -89,8 +92,11 @@
     }
 
     div.tagsDiv {
+      width: 50%;
       display: flex;
       column-gap: 1rem;
+      flex-wrap: nowrap;
+
       .tag {
         background-color: rgba($themeColor, 0.1);
         padding: 0.3rem 0.5rem;
@@ -133,7 +139,7 @@
         img {
           position: unset;
           width: auto;
-          height: 150%;
+          height: 120%;
         }
       }
     }
@@ -174,6 +180,10 @@ div.work {
     @include cardStyle($themeColor);
   }
   &.wp {
+    $themeColor: #1815cd;
+    @include cardStyle($themeColor);
+  }
+  &.library {
     $themeColor: #1815cd;
     @include cardStyle($themeColor);
   }
