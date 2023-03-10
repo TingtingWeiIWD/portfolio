@@ -53,7 +53,10 @@ div.skills {
       div {
         font-size: 4vw;
         position: relative;
-
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
         @include breakpoint-medium {
           display: flex;
           flex-direction: column;

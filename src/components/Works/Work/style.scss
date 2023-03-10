@@ -19,7 +19,7 @@
   div.tagsDiv {
     width: 50%;
     display: flex;
-    column-gap: 1rem;
+    column-gap: 0.5rem;
     flex-wrap: wrap;
     row-gap: 1rem;
     .tag {
@@ -92,10 +92,11 @@
     }
 
     div.tagsDiv {
-      width: 50%;
+      width: 100%;
       display: flex;
-      column-gap: 1rem;
-      flex-wrap: nowrap;
+      column-gap: 0.5rem;
+      //flex-wrap: nowrap;
+      flex-wrap: wrap;
 
       .tag {
         background-color: rgba($themeColor, 0.1);
