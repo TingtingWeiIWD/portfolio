@@ -19,6 +19,16 @@ function ResumeButton({ text, href }) {
     </a>
   );
 }
+
+function HeaderResume({ text, href }) {
+  return (
+    <a href={href} className="borderBtn headerResume" download>
+      <span>
+        {text} <FiArrowUpRight />
+      </span>
+    </a>
+  );
+}
 function Button2({ text, href }) {
   return (
     <a href={href} target="_blank" className="fillBtn">
@@ -28,4 +38,4 @@ function Button2({ text, href }) {
     </a>
   );
 }
-export { Button, Button2, ResumeButton };
+export { Button, Button2, ResumeButton, HeaderResume };

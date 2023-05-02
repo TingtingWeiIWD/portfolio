@@ -6,6 +6,8 @@ import Skills from "./components/Skills";
 import Works from "./components/Works";
 import Cursor from "./elements/Cursor";
 
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,7 @@ function App() {
       <Works />
       <Contact />
       <Cursor />
+      <Footer />
     </div>
   );
 }

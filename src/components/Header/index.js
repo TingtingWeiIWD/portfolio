@@ -6,6 +6,8 @@ import { FaLaptopCode } from "react-icons/fa";
 import { AiOutlineMessage } from "react-icons/ai";
 import { useState } from "react";
 import Blob from "../../elements/Blob";
+import { HeaderResume } from "../../elements/Button";
+import resume from "../About/TingtingWei_Resume.pdf";
 
 export default function Header() {
   const [showNav, setShowNav] = useState(false);
@@ -53,8 +55,11 @@ export default function Header() {
         <li>
           <a href="#works">Works</a>
         </li>
-        <li id="headerBlobParent">
+        <li>
           <a href="#contact">Contact</a>
+        </li>
+        <li id="headerBlobParent">
+          <HeaderResume text="My Resume  " href={resume} />
           <Blob />
         </li>
       </ul>

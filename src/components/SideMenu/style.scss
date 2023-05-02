@@ -1,0 +1,44 @@
+@import "../../styles/variebles.scss";
+
+div.sideMenu {
+  @include breakpoint-small {
+    display: none;
+  }
+  position: fixed;
+  top: 50vh;
+  right: -100px;
+  align-self: center;
+  background: transparentize($color: $primary2, $amount: 0.8);
+  color: white;
+  border-radius: 2vw 0 0 2vw;
+  &:hover {
+    transform: translateX(-100px);
+    transition: all 0.2s ease-in-out;
+  }
+  ul {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: flex-start;
+
+    li {
+      list-style: none;
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: $primary1;
+        }
+        span {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

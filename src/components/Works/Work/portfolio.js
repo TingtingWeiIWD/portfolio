@@ -3,8 +3,20 @@ import cny from "../portfolioImg/cny.png";
 import dv from "../portfolioImg/dv.png";
 import portfolioPic from "../portfolioImg/portfolio.png";
 import library from "../portfolioImg/library.png";
+import space from "../portfolioImg/space.png";
 
 const portfolio = [
+  {
+    id: "space",
+    projectName: "Interior design website developed with React",
+    tags: ["React", "Firebase", "Figma", "Sass", "Responsive"],
+    description:
+      "Interior design website. Designed with Figma and developed with React.",
+    repoLink: "https://github.com/TingtingWeiIWD/spacesavvy",
+    liveLink: "https://spacesavvy.vercel.app/",
+    image: space,
+    themeColor: "#F8820A",
+  },
   {
     id: "portfolio",
     projectName: "Portfolio developed with React",

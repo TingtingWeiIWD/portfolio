@@ -4,6 +4,7 @@ import { FaGithubSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import Blob from "../../elements/Blob";
 
 import resume from "./TingtingWei_Resume.pdf";
+import SideMenu from "../SideMenu";
 
 export default function About() {
   // const downloadResume = () => {
@@ -12,6 +13,7 @@ export default function About() {
 
   return (
     <div id="about" className="about">
+      <SideMenu />
       <h2>
         I enjoy
         <br />

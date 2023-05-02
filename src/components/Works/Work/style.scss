@@ -162,6 +162,11 @@ div.work {
   height: 100%;
   border-radius: 20px;
 
+  &.space {
+    $themeColor: #3e6633;
+    @include cardStyle($themeColor);
+  }
+
   &.portfolio {
     $themeColor: $secondary2;
     @include cardStyle($themeColor);

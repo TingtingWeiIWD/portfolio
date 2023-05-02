@@ -1,0 +1,42 @@
+@import "../../styles/variebles.scss";
+
+div .footer {
+  //border-top: 0.5px solid;
+  // display: flex;
+  // flex-direction: column;
+  margin-top: -20vw;
+  width: 60%;
+  align-self: center;
+  div.line {
+    width: 100%;
+    height: 1px;
+    margin-top: 1vw;
+    //background-color: aliceblue;
+    background-image: linear-gradient(to right, $primary2 0%, $primary1 100%);
+  }
+  div.footerContent {
+    display: flex;
+    height: 10vw;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+
+    div.contacts {
+      display: flex;
+      column-gap: 1vw;
+      a {
+        color: white;
+        font-size: 2vw;
+        svg:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    div.copyright {
+      color: white;
+      text-align: center;
+      font-size: 1.5vw;
+    }
+  }
+}
