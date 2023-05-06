@@ -15,7 +15,7 @@ body {
       display: flex;
       flex-direction: column;
       row-gap: 20vw;
-
+      overflow: visible;
       @include breakpoint-small {
         row-gap: 4rem;
       }
